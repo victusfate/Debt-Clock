@@ -8,26 +8,29 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #db1423;
+      background-color: #ffffff;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
+      color: black;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #24ebdc; margin-bottom: 3px; }
+    h1 { font-size: 3.8em; color: #db1423; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #24ebdc; }
-    h3 { text-align: center; color: #24ebdc; }
-    a { color: #24ebdc; }
+    h2 { font-size: 1.5em; color: #db1423; }
+    h3 { text-align: center; color: #db1423; }
+    a { color: blue; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
+	a:hover { text-decoration:underline; }
+    pre { padding: 15px; overflow: scroll;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
+
+	<script src="script.js"></script>
 </head>
 
 <body>
@@ -45,17 +48,55 @@
     <h1><a href="http://github.com/victusfate/Debt-Clock">Debt-Clock</a>
       <span class="small">by <a href="http://github.com/victusfate">victusfate</a></span></h1>
 
+	<h1 id="DebtClockSpan" class="clock">14,921,796,982,923</h1>
+	<br  Carl Mowday/>
+	<h2> 
+	    $ <span id="PerCitizenSpan" class="clock"></span> per American citizen<sup>1</sup>
+	<br />or<br /> 
+	    $ <span id="PerHouseHoldSpan" class="clock"></span> per American household<sup>1</sup>
+	</h2> 
+	<br />
+	<br />
+	<br />
+
+	Notes:
+	<sup>1</sup> Estimated U.S. population in 2010: 306,000,000 (source: Wikipedia). Estimated U.S. households in 2010: 114,825,428 (source: U.S. Census Bureau).
+	
+
     <div class="description">
-      javascript debt clock
-(needs a dynamic source for daily debt updates)
+      javascript debt clock, could use a dynamic source for periodic debt updates
     </div>
 
     <h2>License</h2>
 <p>code from http://www.debtclock.us/debtclock.js</p>
 <h2>Authors</h2>
-<p>original code from Carl Mowday</p>
+<p>	
+	<pre>
+	/**
+	 * Copyright (c) 2010, Carl Mowday
+	 * All rights reserved.
+	 *
+	 * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+	 * 
+	 *   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+	 *   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the 
+	 *             documentation and/or other materials provided with the distribution.
+	 *   * Neither the name of the <ORGANIZATION> nor the names of its contributors may be used to endorse or promote products derived from this 
+	 *             software without specific prior written permission.
+	 *
+	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+	 * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS 
+	 * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+	 * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+	 * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	 * 
+	 */	
+	</pre>
+</p>
+
 <h2>Contact</h2>
-<p>Mark Essel (messel@gmail.com)<br/>      </p>
+<p>Mark Essel (messel@gmail.com)
+<br/>      </p>
 
 
     <h2>Download</h2>
